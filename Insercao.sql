@@ -11,7 +11,8 @@ insert into Clients (Fname, Minit, Lname, CPF, Address)
               ('Julia', 'S', 'França', 78921356, 'rua laranjeiras 69, Centro - Cidade das Flores'),
               ('Roberta', 'G', 'Assis', 32659813, 'rua almeida das flores 325, Centro - Cidade das Flores'),
               ('Isabela', 'M', 'Cruz', 98453245, 'rua almeida das flores 879, Centro - Cidade das Flores');
-              
+              ('Diego', 'M', 'Souza', 524586524, 'rua do meio 235, Jardim Miami - Cidade das Flores');
+
 insert into product(Pname, classification_kids, category, avaliação, size) values
 			('fone de ouvido', false, 'Eletrônico', '4', null),
             ('Barbie Elsa', true, 'Brinquedos', '3', null),
@@ -71,4 +72,12 @@ insert into productSeller (idPseller, idPproduct, prodQuantity) values
 			(1,6,80),
             (2,7,10);
 
-            
+select count(*) from clients;
+select * from clients c, orders o where c.idClient = idOrderClient;
+select concat(Fname,' ',Lname) as Client, idOrder as Request, orderStatus as Status from clients c, orders o where c.idClient = idOrderClient;
+select count(*) from clients c, orders o
+				where c.idClient = idOrderClient;
+
+select * from supplier where SocialName = 'Almeida e Filhos';
+select * from orders order by sendValue;
+select concat(SocialName,' na cidade de ',location) as Client_and_city from seller;            
