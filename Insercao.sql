@@ -10,7 +10,7 @@ insert into Clients (Fname, Minit, Lname, CPF, Address)
               ('Ricardo', 'F', 'Silva', 45678391, 'avenida almeida vinha 1009, Centro - Cidade das Flores'),
               ('Julia', 'S', 'França', 78921356, 'rua laranjeiras 69, Centro - Cidade das Flores'),
               ('Roberta', 'G', 'Assis', 32659813, 'rua almeida das flores 325, Centro - Cidade das Flores'),
-              ('Isabela', 'M', 'Cruz', 98453245, 'rua almeida das flores 879, Centro - Cidade das Flores');
+              ('Isabela', 'M', 'Cruz', 98453245, 'rua almeida das flores 879, Centro - Cidade das Flores'),
               ('Diego', 'M', 'Souza', 524586524, 'rua do meio 235, Jardim Miami - Cidade das Flores');
 
 insert into product(Pname, classification_kids, category, avaliação, size) values
